@@ -6,7 +6,7 @@ var getBankDetail = function(swiftcode){
     if(!swiftcode || typeof swiftcode !== 'string'){
         return false;
     }
-    swiftcode = swiftcode.toUpperCase();
+    swiftcode = swiftcode.toUpperCase();    
     var swiftcodeLength = swiftcode.length;
     if(swiftcodeLength >= 8){
         var coutryCode = swiftcode.substring(4, 6).toUpperCase();
@@ -31,10 +31,16 @@ var getBankDetail = function(swiftcode){
                             )
                         )
                     ){
-                        selectedBy8 = {country: json.country, countryCode: json.country_code, ...info};
+                        
+                        selectedBy8 = JSON.parse(JSON.stringify(info));
+                        selectedBy8.country = json.country;
+                        selectedBy8.countryCode = json.country_code;
                     }
                     if(swiftcodeLength == 11 && info.swift_code.indexOf(swiftcode) !== -1){
-                        return {country: json.country, countryCode: json.country_code, ...info};
+                        var data = JSON.parse(JSON.stringify(info));
+                        data.country = json.country;
+                        data.countryCode = json.country_code;
+                        return data;
                     }
                 }
             }
