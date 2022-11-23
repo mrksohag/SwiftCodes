@@ -6,7 +6,8 @@
         "Swift",
         "Bank",
         "Codes",
-        "json"
+        "json",
+        "Coutries"
     ],
     "version": "1.0.4",
     "homepage": "https://github.com/PeterNotenboom/SwiftCodes",

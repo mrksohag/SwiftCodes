@@ -1,7 +1,11 @@
 # SwiftCodes
 Install SwiftCodes from NPM
 ```
-npm i swiftcodes-to-bank-detail
+npm install --save swiftcodes-to-bank-detail
+
+or
+
+yarn add swiftcodes-to-bank-detail
 ```
 Swift Codes or BIC Codes for all the Banks in the world.
 
@@ -11,4 +15,16 @@ All the info is grabbed from public websites.
 ```
 import swiftcodes from 'swiftcodes-to-bank-detail';
 var bankInfo = swiftcodes.getBankDetail(yourSwiftCode);
+```
+
+## Get Banks
+```
+import swiftcodes from 'swiftcodes-to-bank-detail';
+const banks = swiftcodes.getBanks(countryCode);
+```
+
+## Get Countries
+```
+import swiftcodes from 'swiftcodes-to-bank-detail';
+const countries = swiftcodes.getCountries()
 ```
