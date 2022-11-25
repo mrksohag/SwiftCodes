@@ -1,20 +1,24 @@
 {
-    "name": "swiftcodes-to-bank-detail",
-    "description": "Swift Codes or BIC Codes for all the Banks in the world. Cached to json.",
-    "keywords": [
-        "BIC",
-        "Swift",
-        "Bank",
-        "Codes",
-        "json"
-    ],
-    "version": "1.0.4",
-    "homepage": "https://github.com/mrksohag/SwiftCodes",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mizanur Rahman Khan",
-            "homepage": "https://github.com/mrksohag/"
-        }
-    ]
+  "name": "swiftcodes-toolkit",
+  "description": "Swift Codes or BIC Codes for all the Banks in the world. Cached to json.",
+  "keywords": [
+    "BIC",
+    "Swift",
+    "Bank",
+    "Codes",
+    "json"
+  ],
+  "version": "1.0.4",
+  "homepage": "https://github.com/psecuresystem/swiftcodes-toolkit",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vision Onyeaku",
+      "homepage": "https://github.com/psecuresystem/"
+    },
+    {
+      "name": "Mizanur Rahman Khan",
+      "homepage": "https://github.com/mrksohag/"
+    }
+  ]
 }
